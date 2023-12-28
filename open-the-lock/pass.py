@@ -1,6 +1,6 @@
 # https://leetcode.cn/problems/open-the-lock/
 
-class Solution(object):
+class Solution:
     def openLock(self, deadends, target):
         """
         :type deadends: List[str]

@@ -1,6 +1,6 @@
 # https://leetcode.cn/problems/dungeon-game/submissions/
 
-class Solution(object):
+class Solution:
 
     def calculateMinimumHP(self, dungeon):
         """
