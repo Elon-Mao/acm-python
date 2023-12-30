@@ -33,10 +33,10 @@ class Solution:
 
         @cache_decorator
         def is_match(i, j):
-            if j == p_len:
-                return i == s_len
             if i == s_len:
                 return can_finish(j)
+            if j == p_len:
+                return False
             has_aster = len(p_mixes[j]) != 1
             if is_char_equal(s_chars[i], p_mixes[j][0]):
                 return is_match(i + 1, j + 1) or has_aster and (is_match(i + 1, j) or is_match(i, j + 1))
